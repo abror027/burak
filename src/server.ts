@@ -1,9 +1,7 @@
-console.log("EXECUTED");
+// Architectural pattern: MVC, DI, MVP
 
-import moment from "moment";
+// MVC = MODULE VIEW CONTOLLER
 
-const currentTime = moment().format("YYYY MM DD");
-console.log(currentTime);
+// Design pattern: Middleware, Decotar
 
-const person: string = "Gary";
-const count: number = 100;
+

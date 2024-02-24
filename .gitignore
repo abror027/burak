@@ -1,0 +1,5 @@
+meTyped.ts
+node_modules
+dist
+
+.env

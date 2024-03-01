@@ -5,7 +5,7 @@ console.log("hello world")
     -Naming standarts
         function, method, varible => camel case orqali  goHome
         class => PASCAL case    MemberService
-        folder => kebab case    book-name
+        folder, file => kebab case    book-name
         css => snake case       button_style
     -Erorr handling
 

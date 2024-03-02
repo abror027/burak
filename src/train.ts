@@ -11,6 +11,12 @@ console.log("hello world")
 
 */
 
+/*
+Traditional Api
+Rest Api
+GraphQL Api
+*/
+
 
 
 

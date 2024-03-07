@@ -1,5 +1,43 @@
 console.log("hello world")
 
+
+// I-TASK: 
+
+// Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
+// MASALAN: getDigits("m14i1t") return qiladi "141"
+
+// @MITASK
+
+function digit(getDigit: string) {
+    let buk = "";
+    for (let i = 0; i < getDigit.length; i++) {
+        let g = getDigit.charAt(i);
+        console.log(Number(g))
+        if (Number(g) || g === "0") {
+            buk += g;
+        }
+    }
+    return buk;
+}
+
+const result = digit("s8d98d74as209");
+console.log("home", result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Project Standarts:
     -Logging standarts
     -Naming standarts
@@ -34,7 +72,7 @@ GraphQL Api
 
 
 
-// // H-TASK: 
+// // H-TASK:
 
 // // shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
 // // MASALAN: getPositive([1, -4, 33, 2]) return qiladi "12"

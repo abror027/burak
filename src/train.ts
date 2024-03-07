@@ -12,7 +12,6 @@ function digit(getDigit: string) {
     let buk = "";
     for (let i = 0; i < getDigit.length; i++) {
         let g = getDigit.charAt(i);
-        console.log(Number(g))
         if (Number(g) || g === "0") {
             buk += g;
         }

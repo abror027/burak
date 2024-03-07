@@ -10,16 +10,16 @@ restaurantController.goHome = (req: Request, res: Response) => {
         console.log("goHome");
         res.send("Home Page");
         // send | json | end | render
-    }catch (err) {
+    } catch (err) {
         console.log("Error, goHome:", err);
-    }restaurantController
+    } restaurantController
 };
 
 restaurantController.getLogin = (req: Request, res: Response) => {
     try {
         console.log("getLogin");
         res.send("Login Page");
-    }catch (err) {
+    } catch (err) {
         console.log("Error, getLogin:", err);
     }
 };
@@ -28,7 +28,7 @@ restaurantController.getSignup = (req: Request, res: Response) => {
     try {
         console.log("getSignup");
         res.send("Signup Page");
-    }catch (err) {
+    } catch (err) {
         console.log("Error, getSignup:", err);
     }
 };
@@ -38,12 +38,12 @@ restaurantController.processLogin = async (req: Request, res: Response) => {
         console.log("processLogin");
         console.log("body", req.body);
         const input: LoginInput = req.body;
-        
+
         const memberService = new MemberService();
         const result = await memberService.processLogin(input);
 
         res.send(result)
-    }catch (err) {
+    } catch (err) {
         console.log("Error, processLogin:", err);
         res.send(err);
     }
@@ -56,12 +56,12 @@ restaurantController.processSignup = async (req: Request, res: Response) => {
 
         const newMember: MemberInput = req.body;
         newMember.memberType = MemberType.RESTAURANT;
-        
+
         const memberService = new MemberService();
         const result = await memberService.processSignup(newMember);
-        
+
         res.send(result);
-    }catch (err) {
+    } catch (err) {
         console.log("Error, processSignup:", err);
         res.send(err);
     }

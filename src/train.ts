@@ -1,35 +1,70 @@
-console.log("hello world")
+console.log("hello world");
+console.log("**************************")
 
 
-// I-TASK: 
+
+// J-TASK: 
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+// MASALAN: findLongestWord("I come from Uzbekistan") return "Uzbekistan"
+
+// @MITASK
+
+
+function findLongestWord(text: string) {
+    const buk: string[] = text.split(" ");
+    let longTxt = "";
+    for (let i = 0; i < buk.length; i++) {
+        if (buk[i].length > longTxt.length) {
+            longTxt = buk[i];
+        }
+    }
+    return longTxt;
+}
+
+
+console.log(findLongestWord("O‘z navbatida aholi uchun elektromobillarni xarid qilishni rag‘batlantirish"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// I-TASK:
 
 // Shunday function tuzing, unga string argument pass bolsin. Function ushbu agrumentdagi digitlarni yangi stringda return qilsin
 // MASALAN: getDigits("m14i1t") return qiladi "141"
 
 // @MITASK
 
-function digit(getDigit: string) {
-    let buk = "";
-    for (let i = 0; i < getDigit.length; i++) {
-        let g = getDigit.charAt(i);
-        if (Number(g) || g === "0") {
-            buk += g;
-        }
-    }
-    return buk;
-}
+// function digit(getDigit: string) {
+//     let buk = "";
+//     for (let i = 0; i < getDigit.length; i++) {
+//         let g = getDigit.charAt(i);
+//         if (Number(g) || g === "0") {
+//             buk += g;
+//         }
+//     }
+//     return buk;
+// }
 
-const result = digit("s8d98d74as209");
-console.log("home", result);
-
-
-
-
-
-
-
-
-
+// const result = digit("s8d98d74as209");
+// console.log("home", result);
 
 
 
@@ -49,10 +84,23 @@ console.log("home", result);
 */
 
 /*
-Traditional Api
-Rest Api
-GraphQL Api
+    Traditional Api
+    Rest Api
+    GraphQL Api
 */
+
+/*
+                FD(frontend development)
+
+    Traditional FD => SSR (Admin) => EJS
+    Modern FD => SPA (User's application) => REACT
+*/
+
+
+
+
+
+
 
 
 

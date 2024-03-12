@@ -2,11 +2,6 @@ body {
     background-color: rgb(123, 197, 197);
 }
 
-.format1 {
-    font-size: 50px; 
-    color: chartreuse;
-}
-
 .cont {
     margin-top: 180px;
     display: flex;

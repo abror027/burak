@@ -3,6 +3,22 @@ console.log("**************************")
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // J-TASK: 
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
@@ -11,36 +27,19 @@ console.log("**************************")
 // @MITASK
 
 
-function findLongestWord(text: string) {
-    const buk: string[] = text.split(" ");
-    let longTxt = "";
-    for (let i = 0; i < buk.length; i++) {
-        if (buk[i].length > longTxt.length) {
-            longTxt = buk[i];
-        }
-    }
-    return longTxt;
-}
+// function findLongestWord(text: string) {
+//     const buk: string[] = text.split(" ");
+//     let longTxt = "";
+//     for (let i = 0; i < buk.length; i++) {
+//         if (buk[i].length > longTxt.length) {
+//             longTxt = buk[i];
+//         }
+//     }
+//     return longTxt;
+// }
 
 
-console.log(findLongestWord("O‘z navbatida aholi uchun elektromobillarni xarid qilishni rag‘batlantirish"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// console.log(findLongestWord("O‘z navbatida aholi uchun elektromobillarni xarid qilishni rag‘batlantirish"))
 
 
 
@@ -72,6 +71,28 @@ console.log(findLongestWord("O‘z navbatida aholi uchun elektromobillarni xarid
 
 
 
+/* cookie
+request join (requestga qo'shilib oladi)
+self destroy (o'zini o'zi yo'q qilish)
+*/
+
+
+
+/*
+                FD(frontend development)
+
+    Traditional FD => SSR (Admin) => EJS
+    Modern FD => SPA (User's application) => REACT
+*/
+
+
+/*
+    Traditional Api
+    Rest Api
+    GraphQL Api
+*/
+
+
 /* Project Standarts:
     -Logging standarts
     -Naming standarts
@@ -83,18 +104,7 @@ console.log(findLongestWord("O‘z navbatida aholi uchun elektromobillarni xarid
 
 */
 
-/*
-    Traditional Api
-    Rest Api
-    GraphQL Api
-*/
 
-/*
-                FD(frontend development)
-
-    Traditional FD => SSR (Admin) => EJS
-    Modern FD => SPA (User's application) => REACT
-*/
 
 
 

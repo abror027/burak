@@ -3,6 +3,28 @@ console.log("**************************")
 
 
 
+// K-TASK: 
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
+// MASALAN: countVowels("string") return 1;
+
+// @MITASK
+
+
+let count: number = 0;
+let wovels: string = "aeiouy";
+
+function countVowels(tex: string): number {
+    for (let i = 0; i < tex.length; i++) {
+        if (wovels.includes(tex[i].toLowerCase())) {
+            count++
+        }
+    }
+    return count
+}
+
+
+console.log(countVowels("gubduman"));
 
 
 
@@ -16,10 +38,7 @@ console.log("**************************")
 
 
 
-
-
-
-// J-TASK: 
+// J-TASK:
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
 // MASALAN: findLongestWord("I come from Uzbekistan") return "Uzbekistan"

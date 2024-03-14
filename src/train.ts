@@ -87,25 +87,27 @@ console.log(countVowels("gubduman"));
 
 
 
+/* Validation:
+    Frontend validation
+    Backend validation
+    Database validation
+*/
 
 
-
-/* cookie
+/* cookies:
 request join (requestga qo'shilib oladi)
 self destroy (o'zini o'zi yo'q qilish)
 */
 
 
 
-/*
-                FD(frontend development)
-
+/* FD(frontend development):
     Traditional FD => SSR (Admin) => EJS
     Modern FD => SPA (User's application) => REACT
 */
 
 
-/*
+/*  Request:
     Traditional Api
     Rest Api
     GraphQL Api

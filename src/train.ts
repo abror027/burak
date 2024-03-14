@@ -1,9 +1,46 @@
 console.log("hello world");
-console.log("**************************")
+console.log("**************************");
+
+
+// L-TASK: 
+
+// Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
+// MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
 
 
 
-// K-TASK: 
+function reTex(sentence: string): string {
+    const oneSen: string[] = sentence.split(" ");
+    const reverTex: string[] = [];
+
+    for (let word of oneSen) {
+        reverTex.push(word.split('').reverse().join(''));
+    }
+
+    return reverTex.join(' ');
+}
+
+const result = reTex("vaqt bor imkon bor!");
+console.log("Natija:", result);
+
+
+
+console.log("**************************");
+console.log("FINISH here homeWork MIT-Task");
+
+
+
+
+
+
+
+
+
+
+
+
+
+// K-TASK:
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi unli harflar sonini qaytarsin.
 // MASALAN: countVowels("string") return 1;
@@ -11,6 +48,7 @@ console.log("**************************")
 // @MITASK
 
 
+/*
 let count: number = 0;
 let wovels: string = "aeiouy";
 
@@ -26,15 +64,7 @@ function countVowels(tex: string): number {
 
 console.log(countVowels("gubduman"));
 
-
-
-
-
-
-
-
-
-
+*/
 
 
 

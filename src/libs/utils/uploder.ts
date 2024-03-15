@@ -2,7 +2,7 @@ import path from "path";
 import multer from "multer";
 import { v4 } from 'uuid';
 
-/** MULTER IMAGE UPLOADER */
+/** MULTER IMAGE UPLOADER dinamik hamma joyda yuklashga ruxsat berish qayta qayta yozish shart emas*/
 function getTargetImageStorage(address: any) {
     return multer.diskStorage({
         destination: function (req, file, cb) {
@@ -23,7 +23,7 @@ const makeUploader = (address: string) => {
 export default makeUploader;
 
 
-/*
+/* faqat bitta joyga yuklaymiz
 const product_storage = multer.diskStorage({
     destination: function (req, file, cb) {
         cb(null, './uploads/products');

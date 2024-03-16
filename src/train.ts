@@ -2,6 +2,38 @@ console.log("hello world");
 console.log("**************************");
 
 
+
+// M-TASK: 
+
+// Shunday function yozing, u raqam lard an tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+// MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+
+function getSquareNumbers(array: number[]): { number: number, kvadrat: number }[] {
+    const result: { number: number, kvadrat: number }[] = [];
+
+    for (let i = 0; i < array.length; i++) {
+        const number = array[i];
+        const kvadrat = number * number;
+        result.push({ number, kvadrat });
+    }
+
+    return result;
+}
+
+console.log(getSquareNumbers([3, 5, 12])); 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // L-TASK: 
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
@@ -9,34 +41,24 @@ console.log("**************************");
 
 
 
-function reTex(sentence: string): string {
-    const oneSen: string[] = sentence.split(" ");
-    const reverTex: string[] = [];
+// function reTex(sentence: string): string {
+//     const oneSen: string[] = sentence.split(" ");
+//     const reverTex: string[] = [];
 
-    for (let word of oneSen) {
-        reverTex.push(word.split('').reverse().join(''));
-    }
+//     for (let word of oneSen) {
+//         reverTex.push(word.split('').reverse().join(''));
+//     }
 
-    return reverTex.join(' ');
-}
+//     return reverTex.join(' ');
+// }
 
-const result = reTex("vaqt bor imkon bor!");
-console.log("Natija:", result);
-
-
-
-console.log("**************************");
-console.log("FINISH here homeWork MIT-Task");
+// const result = reTex("vaqt bor imkon bor!");
+// console.log("Natija:", result);
 
 
 
-
-
-
-
-
-
-
+// console.log("**************************");
+// console.log("FINISH here homeWork MIT-Task");
 
 
 

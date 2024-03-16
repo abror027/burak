@@ -98,6 +98,29 @@ restaurantController.logout = async (
     }
 };
 
+restaurantController.getUsers = async (req: Request, res: Response) => {
+    try {
+        console.log("getUsers");
+        const result = await memberService.getUsers();
+        console.log("result", result);
+
+        res.render("users", { users: result });
+    } catch (err) {
+        console.log("Error, getUsers:", err);
+        res.redirect("/admin/login");
+    }
+};
+
+restaurantController.updateChoosenUser = (req: Request, res: Response) => {
+    try {
+        console.log("updateChoosenUser");
+        res.render("login");
+    } catch (err) {
+        console.log("Error, updateChoosenUser:", err);
+
+    }
+};
+
 restaurantController.checkAuthSession = async (
     req: AdminRequest,
     res: Response
@@ -105,7 +128,7 @@ restaurantController.checkAuthSession = async (
     try {
         console.log("checkAuthSession");
         if (req.session?.member) res.send(`<script> alert("${req.session.member.memberNick}") </script>`);
-        else res.send(`<script> alert("${Message.NOT_AUTHENTCATED}") </script>`)
+        else res.send(`<script> alert("${Message.NOT_AUTHENTCATED}") </script>`);
     } catch (err) {
         console.log("Error, checkAuthSession:", err);
         res.send(err);

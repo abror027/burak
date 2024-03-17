@@ -1,26 +1,23 @@
 console.log("hello world");
 console.log("**************************");
 
+// N-TASK: 
 
+// Shunday function yozing, u string qabul qilsin va string palindrom yani togri oqilganda ham, orqasidan oqilganda ham bir hil oqiladigan soz ekanligini aniqlab boolean qiymat qaytarsin.
+// MASALAN: palindromCheck("dad") return true;  palindromCheck("son") return false;
 
-// M-TASK: 
-
-// Shunday function yozing, u raqam lard an tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
-// MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
-
-function getSquareNumbers(array: number[]): { number: number, kvadrat: number }[] {
-    const result: { number: number, kvadrat: number }[] = [];
-
-    for (let i = 0; i < array.length; i++) {
-        const number = array[i];
-        const kvadrat = number * number;
-        result.push({ number, kvadrat });
+function palindromCheck(inpStr: string) {
+    for (let i = 0; i < inpStr.length / 2; i++) {
+        if (inpStr.toLowerCase().charAt(i) !== inpStr.toLowerCase().charAt(inpStr.length - 1 - i)) {
+            return false;
+        }
     }
-
-    return result;
+    return true;
 }
 
-console.log(getSquareNumbers([3, 5, 12])); 
+// Menda katta L va kichik l bir xil qiymatni qabul qiladi. Hotirjam holda meni run qiling *_*
+
+console.log(palindromCheck("22Lul55luL22"));
 
 
 
@@ -34,7 +31,32 @@ console.log(getSquareNumbers([3, 5, 12]));
 
 
 
-// L-TASK: 
+
+
+
+
+// // M-TASK:
+
+// // Shunday function yozing, u raqam lard an tashkil topgan array qabul qilsin va array ichidagi har bir raqam uchun raqamni ozi va hamda osha raqamni kvadratidan tashkil topgan object hosil qilib, hosil bolgan objectlarni array ichida qaytarsin.
+// // MASALAN: getSquareNumbers([1, 2, 3]) return [{number: 1, square: 1}, {number: 2, square: 4}, {number: 3, square: 9}];
+
+// function getSquareNumbers(array: number[]): { number: number, kvadrat: number }[] {
+//     const result: { number: number, kvadrat: number }[] = [];
+
+//     for (let i = 0; i < array.length; i++) {
+//         const number = array[i];
+//         const kvadrat = number * number;
+//         result.push({ number, kvadrat });
+//     }
+
+//     return result;
+// }
+
+// console.log(getSquareNumbers([3, 5, 12]));
+
+
+
+// L-TASK:
 
 // Shunday function yozing, u string qabul qilsin va string ichidagi hamma sozlarni chappasiga yozib va sozlar ketma-ketligini buzmasdan stringni qaytarsin.
 // MASALAN: reverseSentence("we like coding!") return "ew ekil gnidoc";
@@ -176,24 +198,6 @@ self destroy (o'zini o'zi yo'q qilish)
     -Erorr handling
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

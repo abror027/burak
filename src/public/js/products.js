@@ -1,5 +1,7 @@
 console.log("Products frontend javascript file");
 
+// bu ichimliklar bilan liter qiymatini ko'rsatadi
+
 $(function () {
   $(".product-collection").on("change", () => {
     const selectedValue = $(".product-collection").val();
@@ -12,6 +14,8 @@ $(function () {
     }
   });
 
+  // button click, bu imput barni ko'rsatmaydi ko'rsatadi
+
   $("#process-btn").on("click", () => {
     $(".dish-container").slideToggle(500);
     $("#process-btn").css("display", "none");
@@ -22,7 +26,34 @@ $(function () {
     $("#process-btn").css("display", "flex");
   });
 
+  // update
+
+  $(".new-product-status").on("change", async function (e) {
+    const id = e.target.id;
+    const productStatus = $(`#${id}.new-product-status`).val();
+
+    console.log("id:", id);
+    console.log("productStatus:", productStatus);
+
+    try {
+      const response = await axios.post(`/admin/product/${id}`, {
+        productStatus: productStatus,});
+        console.log("response", response);
+      const result = response.data;
+      if (result.data) {
+        console.log("Product updated!");
+        $(this).blur();
+      } else alert("Product update failed!");
+    } catch (err) {
+      console.log(err);
+      alert("Product update failed!");
+
+      // git commit -m "feat: update choosen product frontend logic"
+    }
+  });
 });
+
+// valitation input create
 
 function validateForm() {
   const productName = $(".product-name").val();
@@ -43,6 +74,8 @@ function validateForm() {
     return false;
   } else return true;
 }
+
+// previewFileHandler
 
 function previewFileHandler(input, order) {
   const imgClassName = input.className;

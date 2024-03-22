@@ -37,8 +37,9 @@ $(function () {
 
     try {
       const response = await axios.post(`/admin/product/${id}`, {
-        productStatus: productStatus,});
-        console.log("response", response);
+        productStatus: productStatus,
+      });
+      console.log("response", response);
       const result = response.data;
       if (result.data) {
         console.log("Product updated!");
@@ -47,8 +48,6 @@ $(function () {
     } catch (err) {
       console.log(err);
       alert("Product update failed!");
-
-      // git commit -m "feat: update choosen product frontend logic"
     }
   });
 });

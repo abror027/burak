@@ -61,7 +61,7 @@
                     <%= value.productLeftCount %>
                   </td>
                   <td>
-                    <select class="spec-select new-product-status" id="<% value._id %>"> 
+                    <select class="spec-select new-product-status" id="<%= value._id %>"> 
                       <option value = "PAUSE" <%= value.productStatus ==='PAUSE' ? 'selected' : "" %> >PAUSE</option>
                       <option value = "PROCESS" <%= value.productStatus === 'PROCESS' ? 'selected' : "" %> >PROCESS</option>
                       <option value = "DELETE" <%= value.productStatus === 'DELETE' ? 'selected' : "" %> >DELETE</option>
@@ -70,7 +70,6 @@
                   </td>
                 </tbody>
                 <% }) %>
-                  <!--  LOOP PRODUCTS: END  -->
             </table>
             <div class="long-input" style="align-items: flex-end; margin-bottom: 25px">
               <button class="btn btn-primary" id="process-btn">

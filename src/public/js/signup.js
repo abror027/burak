@@ -43,7 +43,7 @@ function validateSignupForm() {
     alert("Pasword differs, please check!");
     return false;
   }
-  const memberImage = $(".member-image").get(0).files[0].name
+  const memberImage = $(".member-image").get(0)?.files[0].name
     ? $(".member-image").get(0).files[0].name
     : null;
   if (!memberImage) {

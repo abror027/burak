@@ -14,11 +14,11 @@ class ProductService {
 
     /** SSR => Backend Server Sait Rendering*/
 
-    public async getAllProducts(): Promise<Product[]> {
+    public async getAllProducts(): Promise<Product[]> /**lengthni tekshirish kerak (length = 0 kabi) */ {
         const result = await this.productModel.find().exec();
         if(!result) throw new Errors(HttpCode.NOT_FOUND, Message.NO_DATA_FOUND);
         
-        return result
+        return result;
     }
 
     public async createNewProduct(input: ProductInput): Promise<Product> {

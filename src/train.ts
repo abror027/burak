@@ -1,24 +1,19 @@
 
-
 console.log("hello world");
 
-// O - TASK:
 
-// Shunday function yozing, u har xil valuelardan iborat array qabul qilsin va array ichidagi sonlar yigindisini hisoblab chiqqan javobni qaytarsin.
-//     MASALAN: calculateSumOfNumbers([10, "10", { son: 10 }, true, 35]) return 45
+// P-TASK:
 
-function calcNumbers(arr: Array<any>): Number {
-    let result = 0;
-    for(let i = 0; i < arr.length; i++) {
-        if(typeof arr[i] == "number") {
-            result+= arr[i];
-        }
-    }
-    return result;
+// Shunday function yozing, u object qabul qilsin va arrayni object arrayga otkazib arrayni qaytarsin qaytarsin.
+// MASALAN: objectToArray( {a: 10, b: 20}) return [['a', 10], ['b', 20]]
+
+// @MITASK
+
+function objectToArray(inputObj: object) {
+    return Object.entries(inputObj);
 }
 
-console.log(calcNumbers([10, "10", { son: 10 }, true, 35]));
-
+console.log(objectToArray({a: 10, b: 20, c: 37}));
 
 
 
